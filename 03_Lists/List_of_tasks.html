@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>List of tasks</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            padding-left: 30px;
+        }
+
+        ol {
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        li::before {
+            content: url('./icons/unchecked_16.png');
+            display: inline-block;
+            padding: 10px 30px 10px 50px;
+        }
+
+        .checked::before {
+            content: url('./icons/checked_16.png');
+        }
+
+        li::after {
+            content: "\274C";
+            font-size: xx-small;
+            margin-left: 15px;
+        }
+
+        .odd {
+            background-color: #a4ccdb;
+        }
+
+        .even {
+            background-color: #add9e6;
+        }
+
+        .checked {
+            background-color: #e2e2e2;
+        }
+        span{
+text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My To Do List</h1>
+    <ul>
+        <li class="odd"> Hit the gym </li>
+        <li class="checked"><span>Play bills</span></li>
+        <li class="odd">Meet John</li>
+        <li class="even">Buy eggs</li>
+        <li class="checked"><span>Read a book</span></li>
+        <li class="even">Organize office</li>
+        <li class="odd">Eat dinner</li>
+        <li class="even">Buy apples</li>
+        <li class="odd">Meet George</li>
+        <li class="even">Feed the cat</li>
+        <li class="checked"><span>Write a letter</span></li>
+        <li class="even">Run 1 km</li>
+    </ul>
+</body>
+
+</html>

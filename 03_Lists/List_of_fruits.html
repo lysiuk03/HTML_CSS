@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lists of fruits</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            color: white;
+            font-size: 24px;
+        }
+
+        ol {
+            background-color: #ec9eae;
+            list-style-type: none;
+            counter-reset: count;
+            padding: 10px;
+        }
+
+        li {
+            background-color: #c66377;
+            margin: 20px;
+            padding: 15px;
+        }
+
+        li::before {
+            content: counter(count) '.';
+            counter-increment: count;
+            display: inline-block;
+            margin: 0px 10px;
+        }
+        span{
+            background-color: #9e354b;
+            margin: 10px;
+            padding: 15px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li><span>Apple</span></li>
+        <li><span>Orange</span></li>
+        <li><span>Pineapple</span></li>
+        <li><span>Pear</span></li>
+        <li><span>Cherry</span></li>
+    </ol>
+</body>
+
+</html>
