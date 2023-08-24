@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Progress bar</title>
+<style>
+  body {
+    margin: auto;
+  }
+  .progress-container {
+    width: 700px;
+    height: 100px;
+    margin: 50px;
+      border: 5px solid #ff8b00;
+      position: relative;
+      overflow: hidden;
+  }
+  .progress-bar {
+    width: 100px;
+    height: 100px;
+    background-color: #ff8b00;
+    position: absolute;
+    animation: progressAnimation 3s linear infinite;
+  }
+  @keyframes progressAnimation {
+    0% {
+      left: calc(0% - 100px); 
+    }
+    100% {
+      left: calc(100%); 
+    }
+    
+  }
+</style>
+</head>
+<body>
+  <div class="progress-container">
+    <div class="progress-bar"></div>
+  </div>
+</body>
+</html>

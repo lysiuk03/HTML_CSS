@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My site</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fcfad3;
+            overflow: hidden;
+        }
+
+        p {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 70px;
+            margin-bottom: 50px;
+        }
+
+        img {
+            position: relative;
+            height: 100px;
+            opacity: 0;
+        }
+
+        .img_book {
+            height: 150px;
+            left: 150px;
+            animation: bookUp 2s ease-in-out 0.5s forwards;
+        }
+
+        @keyframes bookUp {
+            from {
+                transform: translate(10px, 310px) rotate(0deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: translate(0px, 0px) rotate(-15deg);
+                opacity: 1;
+            }
+        }
+
+        .img_paper {
+            height: 150px;
+            left: 150px;
+            animation: paperUp 2s ease-in-out 1s forwards;
+        }
+
+        @keyframes paperUp {
+            from {
+                transform: translate(30px, 310px) rotate(0deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: translate(0px, 0px) rotate(15deg);
+                opacity: 1;
+            }
+        }
+
+        .img_calc {
+            left: 130px;
+            top: 40px;
+            animation: calcUp 2s ease-in-out 1.5s forwards;
+        }
+
+        @keyframes calcUp {
+            from {
+                transform: translate(50px, 310px) rotate(0deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: translate(0px, 0px) rotate(-30deg);
+                opacity: 1;
+            }
+        }
+
+
+        .img_pallete {
+            left: 160px;
+            top: 40px;
+            animation: palleteUp 2s ease-in-out 2s forwards;
+        }
+
+        @keyframes palleteUp {
+            from {
+                transform: translate(-50px, 310px) rotate(0deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: translate(0px, 0px) rotate(210deg);
+                opacity: 1;
+            }
+        }
+
+        .img_pencil {
+            right: 150px;
+            top: 124px;
+            animation: pencilUp 2s ease-in-out 2.5s forwards;
+        }
+
+        @keyframes pencilUp {
+            from {
+                transform: translate(0px, 310px) rotate(0deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: translate(0px, 0px) rotate(90deg);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p>HELLO, MY SITE!</p>
+    <img src="Images\calc.png" alt="Calc" class="img_calc">
+    <img src="Images\book.png" alt="Book" class="img_book">
+    <img src="Images\paper.png" alt="Paper" class="img_paper">
+    <img src="Images\pallete.png" alt="Pallete" class="img_pallete">
+    <img src="Images\pencil.png" alt="Pencil" class="img_pencil">
+</body>
+
+</html>

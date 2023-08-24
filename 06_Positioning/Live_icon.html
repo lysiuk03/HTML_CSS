@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Live icon</title>
+<style>
+ .icon {
+    filter: grayscale(100);
+    width: 100px; 
+}
+.interactive:hover {
+    width: 200px; 
+    filter: grayscale(0);
+    transition: width  5s linear, filter  5s linear;
+}
+</style>
+</head>
+<body>
+    <div>
+        <img src="Images\favorites.png" alt="Like" class="icon interactive"> 
+    </div>
+</body>
+</html>
