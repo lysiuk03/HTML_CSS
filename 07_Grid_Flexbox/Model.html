@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+
+    <style>
+        .container {
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: 1fr 7fr 1.5fr;
+            gap: 5px;
+            background-color: #0d233d;
+            color: white;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            border-radius: 6px;
+        }
+
+        div {
+            border-radius: 3px;
+            padding: 5px 10px;
+        }
+
+        .item-1 {
+            grid-column: span 3;
+            background-color: #aa2f26;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .item-2 {
+            background-color: #b1a429;
+        }
+
+        .item-3 {
+            background-color: #1769aa;
+        }
+
+        .item-4 {
+            background-color: #01796f;
+        }
+
+        .item-5 {
+            grid-column: span 3;
+            background-color: #482880;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+        }
+
+        .left {
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item-1">
+            <div>HOME</div>
+            <div class="left">SEACH</div>
+            <div>LOGOUT</div>
+        </div>
+        <div class="item-2 center">MENU</div>
+        <div class="item-3 center">CONTENT</div>
+        <div class="item-4 center">RIGHT</div>
+        <div class="item-5 center">FOOTER</div>
+    </div>
+</body>
+
+</html>
