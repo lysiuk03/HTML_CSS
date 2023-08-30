@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: 100px 64px 1fr 64px 100px;
+            padding: 20px;
+            font-family: sans-serif;
+            font-size:small;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .right {
+            align-items: flex-end;
+        }
+
+        .left {
+            align-items: flex-start;
+        }
+
+        .time {
+            color: grey;
+            font-size: x-small;
+        }
+
+        .pink_sms {
+            background-color: #ffb6c0;
+            border-radius: 10px 10px 10px 0;
+            padding: 10px;
+        }
+
+        .blue_sms {
+            background-color: #add9e6;
+            border-radius: 10px 10px 0 10px;
+            padding: 10px;
+            margin: 5px;
+        }
+
+        .place_3_2 {
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        .place_4_2 {
+            grid-column: 4;
+            grid-row: 2;
+        }
+
+        .place_5_2 {
+            grid-column: 5;
+            grid-row: 2;
+        }
+        .place_1_3 {
+            grid-column:1;
+            grid-row: 3;
+        }
+        .place_2_3 {
+            grid-column:2;
+            grid-row: 3;
+        }
+        .place_3_3 {
+            grid-column:3;
+            grid-row: 3;
+        }
+        .place_3_4 {
+            grid-column:3;
+            grid-row: 4;
+        }
+        .place_4_4 {
+            grid-column:4;
+            grid-row: 4;
+        }
+        .place_5_4 {
+            grid-column:5;
+            grid-row: 4;
+        }
+        .place_1_5 {
+            grid-column:1;
+            grid-row: 5;
+        }
+        .place_2_5 {
+            grid-column:2;
+            grid-row: 5;
+        }
+        .place_3_5 {
+            grid-column:3;
+            grid-row: 5;
+        }
+        .place_3_6 {
+            grid-column:3;
+            grid-row: 6;
+        }
+        .place_4_6 {
+            grid-column:4;
+            grid-row: 6;
+        }
+        .place_5_6 {
+            grid-column:5;
+            grid-row: 6;
+        }
+        p {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="right">
+            <p>Anie Smith</p>
+            <p class="time">4 hours ago</p>
+        </div>
+        <div><img src="Images\avatar_2.png" alt="avatar_2"></div>
+        <div class="pink_sms">
+            <p>Ut in enim scelerisque, pharetra velit id, maximus nunc</p>
+        </div>
+
+        <div class="place_3_2 blue_sms">
+            <p>Fusce auctor nibh at consequat efficitur</p>
+        </div>
+        <div class="place_4_2"><img src="Images\avatar_1.png" alt="avatar_2"></div>
+        <div class="place_5_2 left">
+            <p>Jack Silverston</p>
+            <p class="time">4 hours ago</p>
+        </div>
+
+        <div class="place_1_3 right">
+            <p>Anie Smith</p>
+            <p class="time">4 hours ago</p>
+        </div>
+        <div class="place_2_3"><img src="Images\avatar_2.png" alt="avatar_2"></div>
+        <div class="place_3_3 pink_sms">
+            <p>Etiam lacinia velit id venenatis sodales</p>
+        </div>
+
+        <div class="place_3_4 blue_sms">
+            <p>Mauris ac mi quis ante dignissim tempus in non nulla</p>
+        </div>
+        <div class="place_4_4"><img src="Images\avatar_1.png" alt="avatar_2"></div>
+        <div class="place_5_4 left">
+            <p>Jack Silverston</p>
+            <p class="time">3 hours ago</p>
+        </div>
+
+        <div class="place_1_5 right">
+            <p>Anie Smith</p>
+            <p class="time">3 hours ago</p>
+        </div>
+        <div class="place_2_5"><img src="Images\avatar_2.png" alt="avatar_2"></div>
+        <div class="place_3_5 pink_sms">
+            <p>Fusce quis ex fringilla, congue diam vel, sodales tortor</p>
+        </div>
+
+        <div class="place_3_6 blue_sms">
+            <p>Curabitur quis dolor eget elit pulvinar sollicitudin</p>
+        </div>
+        <div class="place_4_6"><img src="Images\avatar_1.png" alt="avatar_2"></div>
+        <div class="place_5_6 left">
+            <p>Jack Silverston</p>
+            <p class="time">2 hours ago</p>
+        </div>
+    </div>
+</body>
+
+</html>
