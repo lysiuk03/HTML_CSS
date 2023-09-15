@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Member login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e25d44;
+            ;
+        }
+
+        .container {
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        form {
+            background-color: #e6e4e5;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 20px 15px;
+        }
+
+        h2 {
+            margin-top: 0;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        input {
+            border: none;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+
+        input::placeholder {
+            text-align: center;
+            color: #e6e4e5;
+            font-weight: bold;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .stretch {
+            display: flex;
+            flex-direction: column;
+            margin: 0px auto;
+            max-width: 300px;
+        }
+
+        button {
+            padding: 10px;
+            color: white;
+            border: none;
+        }
+
+        .login-btn {
+            background-color: #33a65c;
+            border-bottom: 4px solid #1c662b;
+            font-weight: bold;
+
+            margin-bottom: 40px;
+        }
+
+        a {
+            text-decoration: none;
+            margin: 0px auto;
+            color: #e25d44;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        label {
+            color: white;
+            margin-top: 30px;
+        }
+
+        .social-login {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .social {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .social-btn {
+            flex: 1;
+            margin-right: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .social-btn:last-child {
+            margin-right: 0;
+        }
+
+        .facebook {
+            background-color: #3d5a98;
+        }
+
+        .twitter {
+            background-color: #1da1f2;
+        }
+
+        img {
+            height: 15px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <h2>Member Login</h2>
+            <div class="stretch">
+                <input id="nameIn" type="text" placeholder="Username">
+                <input id="passIn" type="text" placeholder="Password">
+                <button class="login-btn" type="submit">Login</button>
+                <a href="#">Forgot password?</a>
+            </div>
+        </form>
+        <div class="social-login">
+            <label>... or log in with:</label>
+            <div class="social">
+                <button class="social-btn facebook"><img src="/08_Forms/Images/facebook.png"
+                        alt="facebook"><span>Facebook</span></button>
+                <button class="social-btn twitter"><img src="/08_Forms/Images/twitter.png"
+                        alt="twitter">Twitter</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
