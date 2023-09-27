@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Flight</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+
+        header {
+            background-color: #0f4372;
+            color: white;
+        }
+
+        input,
+        select,
+        button {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            outline: none;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        button {
+            color: whitesmoke;
+            background-color: #0f4372;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .radio-container {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .flex-container input[type="text"],
+        button {
+            width: 135px;
+        }
+
+        .input-with-icon {
+            position: relative;
+            display: inline-block;
+        }
+
+        .input-with-icon img {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 20px;
+            width: auto;
+        }
+
+        .white-div {
+            background-color: white;
+            margin: 5px;
+
+            border-radius: 10px;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+        }
+
+        .filter-div {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .dehly-div {
+            flex: 8;
+            align-self: flex-start;
+        }
+
+        form {
+            margin-bottom: 10px;
+        }
+
+        h5 {
+            color: #0f4372;
+        }
+
+        .dehly-div h4 {
+            text-align: center;
+        }
+
+        td p {
+            color: grey;
+            font-size: small;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        tr {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        p {
+            text-align: center;
+            padding: 0;
+        }
+
+        input[type="number"] {
+            max-width: 40px;
+        }
+
+        span {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-container">
+                <h3>Flights - Search List</h3>
+                <h4>Home/Flights Search List</h4>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <form>
+            <div class="radio-container">
+                <input type="radio" id="option1" name="options" checked>
+                <label for="option1">One Way</label>
+                <input type="radio" id="option2" name="options">
+                <label for="option2">Round Trip</label>
+            </div>
+            <div class="flex-container">
+                <div class="input-with-icon">
+                    <input type="text" placeholder="From">
+                    <img src="/08_Forms/Images/location.svg" alt="Location Icon">
+                </div>
+                <div class="input-with-icon">
+                    <input type="text" placeholder="To">
+                    <img src="/08_Forms/Images/location.svg" alt="Location Icon">
+                </div>
+                <div class="input-with-icon">
+                    <input type="text" placeholder="Depart date">
+                    <img src="/08_Forms/Images/calendar.svg" alt="Location Icon">
+                </div>
+                <div class="input-with-icon">
+                    <input type="text" placeholder="Return date">
+                    <img src="/08_Forms/Images/calendar.svg" alt="Location Icon">
+                </div>
+                <div>
+                    <select>
+                        <option value="1">Economy Class</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="flex-container">
+            <div class="white-div filter-div">
+                <h4>Filter</h4>
+                <h5>No. Of Stops</h5>
+
+                <label><input type="checkbox" value="non-stop"> Non-Stop</label><br>
+                <label><input type="checkbox" value="1-stop"> 1 Stop</label><br>
+                <label><input type="checkbox" value="2-stops"> 2+ Stops</label>
+                <h5>Price</h5>
+                <div class="flex-container">
+                    <input type="number" placeholder="min">
+                    <span>$</span>
+                    <span>-</span>
+                    <input type="number" placeholder="max">
+                    <span>$</span>
+
+                </div>
+                <h5>Airlines</h5>
+                <label><input type="checkbox" value="Asiana Airlines">Asiana Airlines</label><br>
+                <label><input type="checkbox" value="American Airlines">American Airlines</label><br>
+                <label><input type="checkbox" value="Air Canada">Air Canada</label><br>
+                <label><input type="checkbox" value="Air India">Air India</label><br>
+                <label><input type="checkbox" value="Jet Airways">Air Airways</label><br>
+                <label><input type="checkbox" value="Spicejet">Spicejet</label><br>
+                <label><input type="checkbox" value="IndiGo">IndiGo</label><br>
+                <label><input type="checkbox" value="Multiple Airlines">Multiple Airlines</label><br>
+            </div>
+            <div class="white-div dehly-div">
+                <h4>Dehly to Sydney</h4>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Airlines</th>
+                            <th>Departure</th>
+                            <th>Duration</th>
+                            <th>Arrival</th>
+                            <th>Price</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>IndiGo<p>6E2489</p>
+                            </td>
+                            <td>23:30<p>Delhi</p>
+                            </td>
+                            <td>18h 55m <p>Non Stop</p>
+                            </td>
+                            <td>18:15 <p>Sydney</p>
+                            </td>
+                            <td>980$</td>
+                            <td>
+                                <button>Book</button>
+                                <p>Flight Details</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>IndiGo<p>6E2489</p>
+                            </td>
+                            <td>23:30<p>Delhi</p>
+                            </td>
+                            <td>18h 55m <p>Non Stop</p>
+                            </td>
+                            <td>18:15 <p>Sydney</p>
+                            </td>
+                            <td>980$</td>
+                            <td>
+                                <button>Book</button>
+                                <p>Flight Details</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>IndiGo<p>6E2489</p>
+                            </td>
+                            <td>23:30<p>Delhi</p>
+                            </td>
+                            <td>18h 55m <p>Non Stop</p>
+                            </td>
+                            <td>18:15 <p>Sydney</p>
+                            </td>
+                            <td>980$</td>
+                            <td>
+                                <button>Book</button>
+                                <p>Flight Details</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>IndiGo<p>6E2489</p>
+                            </td>
+                            <td>23:30<p>Delhi</p>
+                            </td>
+                            <td>18h 55m <p>Non Stop</p>
+                            </td>
+                            <td>18:15 <p>Sydney</p>
+                            </td>
+                            <td>980$</td>
+                            <td>
+                                <button>Book</button>
+                                <p>Flight Details</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>IndiGo<p>6E2489</p>
+                            </td>
+                            <td>23:30<p>Delhi</p>
+                            </td>
+                            <td>18h 55m <p>Non Stop</p>
+                            </td>
+                            <td>18:15 <p>Sydney</p>
+                            </td>
+                            <td>980$</td>
+                            <td>
+                                <button>Book</button>
+                                <p>Flight Details</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>IndiGo<p>6E2489</p>
+                            </td>
+                            <td>23:30<p>Delhi</p>
+                            </td>
+                            <td>18h 55m <p>Non Stop</p>
+                            </td>
+                            <td>18:15 <p>Sydney</p>
+                            </td>
+                            <td>980$</td>
+                            <td>
+                                <button>Book</button>
+                                <p>Flight Details</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+    </main>
+</body>
+
+</html>

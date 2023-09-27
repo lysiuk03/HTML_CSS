@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact form</title>
+    <style>
+        body {
+            background-image: url('/08_Forms/Images/fon.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            color: whitesmoke;
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #000000;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table th {
+            text-align: left;
+            width: 30%;
+        }
+
+        table div {
+            width: 100%;
+            display: flex;
+        }
+
+        input,
+        select,
+        textarea {
+            border: none;
+            padding: 5px;
+            margin: 5px;
+            flex-grow: 1;
+        }
+
+        input::placeholder,
+        select::placeholde,
+        textarea::placeholder {
+            color: #e6e4e5;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+        }
+
+       button {
+            flex:1;
+            margin: 5px;
+            padding: 5px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: whitesmoke;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.2); 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact form</h1>
+        <p>Please fill your information, and we'll be sending your order.</p>
+        <form>
+            <table>
+                <tr>
+                    <th>Your name</th>
+                    <td>
+                        <div>
+                            <input type="text" placeholder="first name">
+                            <input type="text" placeholder="last name">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Your email</th>
+                    <td>
+                        <div>
+                            <input type="text" placeholder="your_mail@mail.com">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Phone*</th>
+                    <td>
+                        <div>
+                            <input type="text" placeholder="000">
+                            <input type="text" placeholder="000">
+                            <input type="text" placeholder="0000">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Message subject*</th>
+                    <td>
+                        <div>
+                            <select>
+                                <option value="1">Other</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Message*</th>
+                    <td>
+                        <div>
+                            <textarea></textarea>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <hr> 
+                    </td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td>
+                        <div>
+                            <button type="submit">Submit form</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
